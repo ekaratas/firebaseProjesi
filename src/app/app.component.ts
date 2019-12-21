@@ -27,7 +27,6 @@ export class AppComponent {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
-      alert('environment.ts dosyasını kendi firebase ayarlarınıza göre düzenleyiniz.');
     });
 
     const authObserver = this.afAuth.authState.subscribe(user => {
